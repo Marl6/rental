@@ -1,8 +1,24 @@
+import type { Metadata } from "next";
+import { BookingFilterBar } from "@/components/rentals/BookingFilterBar";
+import { PrivateGroupsSection } from "@/components/rentals/PrivateGroupsSection";
+import { RentalsCatalog } from "@/components/rentals/RentalsCatalog";
+import { RentalsHero } from "@/components/rentals/RentalsHero";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "ATV and Horse Rentals | Lockwood's Ranch",
+    description:
+      "Explore premium ATV rentals and guided horse sessions at Lockwood's Ranch. Reserve your adventure today.",
+  };
+}
+
 export default function RentalsPage() {
   return (
-    <main className="flex flex-1 flex-col gap-4 p-6">
-      <h1 className="text-2xl font-semibold">Rentals</h1>
-      <p>ATV and horse bookings.</p>
-    </main>
+    <div className="flex flex-col">
+      <RentalsHero />
+      <BookingFilterBar />
+      <RentalsCatalog />
+      <PrivateGroupsSection />
+    </div>
   );
 }

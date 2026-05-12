@@ -10,9 +10,19 @@ export type VideoGridProps = {
 
 export function VideoGrid({ items }: VideoGridProps) {
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
       {items.map((item) => (
-        <video key={item.id} src={item.url} controls title={item.title} />
+        <div
+          key={item.id}
+          className="border border-outline-variant overflow-hidden"
+        >
+          <video
+            src={item.url}
+            controls
+            title={item.title}
+            className="w-full h-full object-cover aspect-video"
+          />
+        </div>
       ))}
     </div>
   );
