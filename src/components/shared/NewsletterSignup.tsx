@@ -31,7 +31,7 @@ export const NewsletterSignup: FC = () => {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-4 w-full md:w-auto"
+            className="flex flex-col sm:flex-row sm:items-end gap-4 w-full md:w-auto"
           >
             {/* TODO Phase 2: Replace onSubmit with Stripe Checkout session */}
             <div className="flex flex-col gap-2 w-full sm:w-80">
@@ -46,13 +46,13 @@ export const NewsletterSignup: FC = () => {
                 type="email"
                 required
                 placeholder="you@domain.com"
-                className="w-full bg-transparent border-b border-on-primary/40 focus:ring-0 focus:border-on-primary px-0 py-2 text-on-primary placeholder:text-on-primary/60"
+                className="h-10 w-full bg-transparent border-b border-on-primary/40 focus:ring-0 focus:border-on-primary px-0 py-2 text-on-primary placeholder:text-on-primary/60"
               />
             </div>
             <Button
               type="submit"
               variant="secondary"
-              className="bg-on-primary text-primary hover:bg-on-primary/90"
+              className="h-10 bg-on-primary text-primary hover:bg-on-primary/90"
             >
               Subscribe
             </Button>

@@ -33,3 +33,25 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.page-transition {
+  animation: pageFade 320ms ease-out;
+  will-change: opacity;
+  background-color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+}
