@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
+import { RegisterPageBody } from "@/components/auth/RegisterPageBody";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Create Account | Lockwood's Ranch",
+    description:
+      "Create your Lockwood's Ranch account to access bookings, events, and member updates.",
+  };
+}
+
 export default function RegisterPage() {
-  return (
-    <main className="flex flex-1 flex-col gap-4 p-6">
-      <h1 className="text-2xl font-semibold">Register</h1>
-      <p>Authentication flow: register.</p>
-    </main>
-  );
+  return <RegisterPageBody />;
 }
