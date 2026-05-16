@@ -52,7 +52,7 @@ export function LoginPageBody() {
               label="Email"
               type="email"
               icon="mail"
-              placeholder="you@domain.com"
+              placeholder="Enter your email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               required
