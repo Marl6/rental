@@ -70,7 +70,7 @@ export function ResetPasswordPageBody() {
 
       <div className="lg:col-span-5 flex items-center justify-center px-6 py-16">
         <div className="relative z-10 w-full max-w-lg bg-surface-bright p-8 md:p-16 border border-outline-variant">
-          <AuthBrandHeader subtitle="Account Access" />
+          <AuthBrandHeader subtitle="Reset Password" />
           <div className="mt-6">
             <Link
               href="/login"

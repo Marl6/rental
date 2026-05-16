@@ -44,9 +44,10 @@ export function LoginPageBody() {
       </div>
 
       <div className="relative z-10 w-full max-w-[440px] space-y-6">
-        <AuthBrandHeader subtitle="Welcome Back" />
+        <AuthBrandHeader />
         <AuthCard>
           <form onSubmit={handleSubmit} className="space-y-6">
+            <AuthBrandHeader title="" subtitle="Login" />
             <AuthInput
               id="login-email"
               label="Email"

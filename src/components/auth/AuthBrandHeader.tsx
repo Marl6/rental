@@ -10,13 +10,13 @@ export function AuthBrandHeader({
   subtitle = "Est. 1894",
 }: AuthBrandHeaderProps) {
   return (
-    <div className="space-y-2">
-      <p className="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">
-        {subtitle}
-      </p>
+    <div className="text-center space-y-1">
       <h1 className="font-headline-md text-headline-md text-primary tracking-tighter">
         {title}
       </h1>
+      <p className="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">
+        {subtitle}
+      </p>
     </div>
   );
 }
