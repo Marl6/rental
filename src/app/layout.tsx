@@ -6,6 +6,9 @@ import { GrainOverlay } from "@/components/layout/GrainOverlay";
 import { PageTransition } from "@/components/layout/PageTransition";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
   title: "Lockwood's Ranch",
   description:
     "Your Frontier, Refined. ATV rentals, horse rides, weddings, and events.",
