@@ -47,7 +47,7 @@ export const AboutSection: FC = () => {
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant mt-4">
             Lockwood&apos;s Ranch pairs rugged landscapes with curated comfort.
-            Our 4,000-acre estate blends open-range adventure with tailored
+            Our 180-acre estate blends open-range adventure with tailored
             service, from sunrise trail rides to evening celebrations under the
             stars.
           </p>

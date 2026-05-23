@@ -31,7 +31,7 @@ export const mockRentals = [
     price: 250,
     priceUnit: "Session",
     description:
-      "6 highly-trained majestic horses for guided scenic tours across our 4,000-acre estate.",
+      "6 highly-trained majestic horses for guided scenic tours across our 180-acre estate.",
     image: "/images/rentals/equestrian-fold.jpg",
     badge: "Limited Availability",
   },
