@@ -37,8 +37,8 @@ export const PrivateGroupsSection: FC = () => {
                 Group Testimonial
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant mt-3">
-                "The Lockwood team built a full-day itinerary that felt private,
-                polished, and unforgettable."
+                &ldquo;The Lockwood team built a full-day itinerary that felt
+                private, polished, and unforgettable.&rdquo;
               </p>
               <p className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant mt-4">
                 - Northwind Collective

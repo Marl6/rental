@@ -53,10 +53,10 @@ export function Footer() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div className="text-on-surface-variant font-body-md">
           <p className="font-headline-sm text-headline-sm text-primary">
-            Lockwood's Ranch
+            Lockwood&apos;s Ranch
           </p>
           <p className="mt-2 text-body-md text-on-surface-variant">
-            © 2026 Lockwood's Ranch. All rights reserved.
+            © 2026 Lockwood&apos;s Ranch. All rights reserved.
           </p>
         </div>
         <div className="flex flex-wrap gap-6 text-body-md text-on-surface-variant">
