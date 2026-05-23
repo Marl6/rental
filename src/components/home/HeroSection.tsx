@@ -9,8 +9,8 @@ export const HeroSection: FC = () => {
   return (
     <section className="relative h-screen w-full flex items-center justify-center">
       <Image
-        src="/images/home/hero.jpg"
-        alt="Ranch sunrise over the main lodge and open plains"
+        src="https://res.cloudinary.com/dhivjpqct/image/upload/home/hero.jpg?v=2"
+        alt="Hero"
         fill
         priority
         sizes="100vw"
@@ -20,12 +20,15 @@ export const HeroSection: FC = () => {
       />
       <div className="absolute inset-0 cinematic-gradient" />
       <div className="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-24">
-        <span className="text-surface-bright font-label-md text-label-md uppercase tracking-widest">
-          Est. 1894
+        <span className="text-surface-bright font-label-md text-body-lg uppercase tracking-widest">
+          Est. 1860<span className="small">s</span>
         </span>
-        <h1 className="text-surface-bright font-display-lg text-headline-lg-mobile md:text-display-lg mt-6">
-          Your Frontier, Refined.
+        <h1 className="text-surface-bright font-display-lg text-headline-lg md:text-display-lg mt-2">
+          Lockwood&apos;s Ranch
         </h1>
+        <h4 className="text-surface-bright font-headline-md text-headline-md mt-4 md:mt-3">
+          Your Frontier, Refined.
+        </h4>
         <p className="text-surface-bright/80 font-body-md text-body-md max-w-2xl mx-auto mt-4">
           ATV rentals, horse rides, and event weekends woven into a modern ranch
           experience built for the bold and the refined.

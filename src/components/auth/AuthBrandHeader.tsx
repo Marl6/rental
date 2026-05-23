@@ -7,7 +7,7 @@ interface AuthBrandHeaderProps {
 
 export function AuthBrandHeader({
   title = "Lockwood's Ranch",
-  subtitle = "Est. 1894",
+  subtitle = "Est. 1860s",
 }: AuthBrandHeaderProps) {
   return (
     <div className="text-center space-y-1">
