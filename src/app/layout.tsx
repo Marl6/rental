@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Lockwood's Ranch",
   description:
     "Your Frontier, Refined. ATV rentals, horse rides, weddings, and events.",
+  icons: {
+    icon: "https://res.cloudinary.com/dhivjpqct/image/upload/w_64,h_64,c_fit/lockwoodsranchlogo_ed8qfs.png",
+    apple:
+      "https://res.cloudinary.com/dhivjpqct/image/upload/w_180,h_180,c_fit/lockwoodsranchlogo_ed8qfs.png",
+  },
 };
 
 export default function RootLayout({

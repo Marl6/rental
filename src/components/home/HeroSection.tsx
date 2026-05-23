@@ -31,9 +31,12 @@ export const HeroSection: FC = () => {
           experience built for the bold and the refined.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="secondary">Explore Rentals</Button>
+          <Button variant="secondary" href="/rentals">
+            Explore Rentals
+          </Button>
           <Button
             variant="ghost"
+            href="/events"
             className="border-surface-bright text-surface-bright"
           >
             View Events

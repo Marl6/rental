@@ -1,4 +1,5 @@
 import type { FC, ReactNode } from "react";
+import Link from "next/link";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 
@@ -8,6 +9,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit";
+  href?: string;
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -25,13 +27,20 @@ export const Button: FC<ButtonProps> = ({
   className = "",
   onClick,
   type = "button",
+  href,
 }) => {
+  const classes = `px-8 py-3 font-label-md text-label-md uppercase tracking-widest transition-all ${variantClasses[variant]} ${className}`;
+
+  if (href) {
+    return (
+      <Link href={href} onClick={onClick} className={classes}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`px-8 py-3 font-label-md text-label-md uppercase tracking-widest transition-all ${variantClasses[variant]} ${className}`}
-    >
+    <button type={type} onClick={onClick} className={classes}>
       {children}
     </button>
   );
