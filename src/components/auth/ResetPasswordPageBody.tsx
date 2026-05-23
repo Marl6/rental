@@ -3,7 +3,6 @@
 import type { FormEvent } from "react";
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { AuthBrandHeader } from "@/components/auth/AuthBrandHeader";
 import { AuthCTAButton } from "@/components/auth/AuthCTAButton";
 import { AuthInput } from "@/components/auth/AuthInput";
@@ -13,10 +12,13 @@ import {
   PasswordStrengthBar,
 } from "@/components/auth/PasswordStrengthBar";
 
-export function ResetPasswordPageBody() {
-  const searchParams = useSearchParams();
-  const hasToken = Boolean(searchParams.get("token"));
+type ResetPasswordPageBodyProps = {
+  hasToken: boolean;
+};
 
+export function ResetPasswordPageBody({
+  hasToken,
+}: ResetPasswordPageBodyProps) {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ResetPasswordPageBody } from "@/components/auth/ResetPasswordPageBody";
+import { Suspense } from "react";
+import ResetPasswordClient from "./ResetPasswordClient";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -9,5 +10,15 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function ResetPasswordPage() {
-  return <ResetPasswordPageBody />;
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-surface flex items-center justify-center text-on-surface-variant">
+          Loading...
+        </div>
+      }
+    >
+      <ResetPasswordClient />
+    </Suspense>
+  );
 }

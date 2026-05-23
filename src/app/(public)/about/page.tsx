@@ -25,10 +25,10 @@ export default function AboutPage() {
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
         <div>
           <p className="font-body-md text-body-md text-on-surface-variant">
-            Lockwood's Ranch spans 4,000 acres of high desert terrain, built on
-            a legacy of craftsmanship, hospitality, and open-sky adventure. From
-            sunrise trail rides to candlelit celebrations, every detail is
-            curated to feel personal and enduring.
+            Lockwood&apos;s Ranch spans 4,000 acres of high desert terrain,
+            built on a legacy of craftsmanship, hospitality, and open-sky
+            adventure. From sunrise trail rides to candlelit celebrations, every
+            detail is curated to feel personal and enduring.
           </p>
           <p className="font-body-md text-body-md text-on-surface-variant mt-4">
             Our team pairs rugged frontier energy with refined service so guests

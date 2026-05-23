@@ -46,9 +46,10 @@ export const AboutSection: FC = () => {
             A century of frontier hospitality, reimagined.
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant mt-4">
-            Lockwood's Ranch pairs rugged landscapes with curated comfort. Our
-            4,000-acre estate blends open-range adventure with tailored service,
-            from sunrise trail rides to evening celebrations under the stars.
+            Lockwood&apos;s Ranch pairs rugged landscapes with curated comfort.
+            Our 4,000-acre estate blends open-range adventure with tailored
+            service, from sunrise trail rides to evening celebrations under the
+            stars.
           </p>
           <Link
             href="/about"

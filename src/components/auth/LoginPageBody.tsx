@@ -96,7 +96,7 @@ export function LoginPageBody() {
           </form>
         </AuthCard>
         <p className="text-center font-body-md text-body-md text-on-surface-variant">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link
             href="/register"
             className="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary-container"
